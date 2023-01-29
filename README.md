@@ -4,6 +4,8 @@ Introduction to human language technologies (HLT), the study of natural language
 
 [Overview of this repository](https://github.com/alanperez/HLT-Portfolio/blob/main/Overview%20of%20NLP.pdf)
 
+[Portfolio Setup Document](https://github.com/alanperez/HLT-Portfolio/blob/main/Portfolio%20Component%200.pdf)
+
 # Pogram 1
 
 The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio)
