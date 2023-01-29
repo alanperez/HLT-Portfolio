@@ -8,4 +8,4 @@ Introduction to human language technologies (HLT), the study of natural language
 
 # Pogram 1
 
-The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio)
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Processing/Portfolio%20Component%201.pdf)
