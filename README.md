@@ -8,4 +8,6 @@ Introduction to human language technologies (HLT), the study of natural language
 
 # Pogram 1
 
-The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Processing/Portfolio%20Component%201.pdf)
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Processing/Portfolio%20Component%201.pdf) and the [main program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Processing/homework1-axp200075.py)
+
+Program will read data from a csv file, will format correctly based off the helper function and display the employees data
