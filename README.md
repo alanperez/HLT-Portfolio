@@ -6,7 +6,7 @@ Introduction to human language technologies (HLT), the study of natural language
 
 [Portfolio Setup Document](https://github.com/alanperez/HLT-Portfolio/blob/main/Portfolio%20Component%200.pdf)
 
-# Pogram 1
+# Pogram 1 - Text Processing
 
 The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Processing/Portfolio%20Component%201.pdf) and the [main program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Processing/homework1-axp200075.py)
 
