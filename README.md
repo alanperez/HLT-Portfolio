@@ -25,7 +25,7 @@ There are two ways to run this program
 
 # Program 2 Oviewview - GuessingGame
 
-The [requirements based off the document]() and the [main program is here]()
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Program2-GuessingGame/Portfolio%20Chapter%205%20Word%20Guess%20Game.pdf) and the [main program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/Program2-GuessingGame/homework2-axp200075.py)
 
 This program is a guessing game where it reads the input file as raw text, calculate the lexical diversity of the tokenized text and output it,
 
