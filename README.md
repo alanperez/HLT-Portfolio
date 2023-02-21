@@ -23,3 +23,18 @@ There are two ways to run this program
   * Click the run button on the ide
 
 
+# Program 2 Oviewview - GuessingGame
+
+The [requirements based off the document]() and the [main program is here]()
+
+This program is a guessing game where it reads the input file as raw text, calculate the lexical diversity of the tokenized text and output it,
+
+There are two ways to run this program 
+* Terminal
+  * running the command `python homework1-axp200075.py data/data.csv`
+  
+* PyCharm(IDE)
+  * Select "Edit Configurations" under the Run menu tab
+  * Under the script field select the homework file
+  * In the parameters add the file name then save
+  * Click the run button on the ide
