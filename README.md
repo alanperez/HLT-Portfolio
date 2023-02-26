@@ -23,7 +23,7 @@ There are two ways to run this program
   * Click the run button on the ide
 
 
-# Program 2 Oviewview - GuessingGame
+# Program 2 Overview - GuessingGame
 
 The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Program2-GuessingGame/Portfolio%20Chapter%205%20Word%20Guess%20Game.pdf) and the [main program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/Program2-GuessingGame/homework2-axp200075.py)
 
@@ -40,7 +40,7 @@ There are two ways to run this program
   * Click the run button on the ide
   
   
-# Program 3 Oviewview - WordNet
+# Program 3 Overview - WordNet
 
 The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/WordNet/Portfolio%20Chapter%207%20WordNet.pdf) and the [main program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/WordNet/CS4395_001_WordNet_AXP200075.ipynb)
 
