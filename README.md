@@ -38,3 +38,12 @@ There are two ways to run this program
   * Under the script field select the homework file
   * In the parameters add the file name then save
   * Click the run button on the ide
+  
+  
+# Program 3 Oviewview - WordNet
+
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/WordNet/Portfolio%20Chapter%207%20WordNet.pdf) and the [main program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/WordNet/CS4395_001_WordNet_AXP200075.ipynb)
+
+This notebook demonstrates the basic skills of using WordNet and SentiWordNet
+
+The [PDF of the notebook](https://github.com/alanperez/HLT-Portfolio/blob/main/WordNet/CS4395_001_WordNet_AXP200075.pdf)
