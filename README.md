@@ -73,5 +73,8 @@ To run this program,
 
 # Assignment 5 Overview - Sentence Parsing
 
+Write a fairly complex sentence. The sentence should have at least 12 tokens. More points are
+awarded for sentences with more than one clause.
+
 The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/AO5-Parsing/Portfolio%20Component%20Sentence%20Parsing.pdf) and the [sentence assignment is here](https://github.com/alanperez/HLT-Portfolio/blob/main/AO5-Parsing/Parsing.pdf)
 
