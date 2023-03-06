@@ -69,3 +69,9 @@ To run this program,
   * run the first part of the program, once ran there should be a list of pickles in the same working directory
   * run the second program and it should display all the results
 
+
+
+# Assignment 5 Overview - Sentence Parsing
+
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/AO5-Parsing/Portfolio%20Component%20Sentence%20Parsing.pdf) and the [sentence assignment is here](https://github.com/alanperez/HLT-Portfolio/blob/main/AO5-Parsing/Parsing.pdf)
+
