@@ -53,10 +53,14 @@ The [PDF of the notebook](https://github.com/alanperez/HLT-Portfolio/blob/main/W
 
 The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/N-Grams/Portfolio%20Chapter%208%20N-grams.pdf) and the [first part of the program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/N-Grams/ngram-part1-axp200075.py) and the [second part of the program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/N-Grams/ngram-part2-axp200075.py)
 
+[Summary of NGRAMS](https://github.com/alanperez/HLT-Portfolio/blob/main/N-Grams/CS4395.001-AXP200075-NGRAM-Summarydocx.pdf)
+
 In this homework you will create bigram and unigram dictionaries for English, French, and Italian
 using the provided training data where the key is the unigram or bigram text and the value is the
 count of that unigram or bigram in the data. Then for the test data, calculate probabilities for
 each language and compare against the true labels.
+
+
 
 To run this program,
 
