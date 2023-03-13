@@ -78,3 +78,21 @@ awarded for sentences with more than one clause.
 
 The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/AO5-Parsing/Portfolio%20Component%20Sentence%20Parsing.pdf) and the [sentence assignment is here](https://github.com/alanperez/HLT-Portfolio/blob/main/AO5-Parsing/Parsing.pdf)
 
+
+
+# Program 4 Overview - N-Grams
+
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Web%20Crawler/Portfolio%20Chapter%2012%20-%20Web%20Crawler.pdf) and the [main part of the program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/Web%20Crawler/webcrawl.py)
+
+[Report](https://github.com/alanperez/HLT-Portfolio/blob/main/N-Grams/CS4395.001-AXP200075-NGRAM-Summarydocx.pdf)
+
+A program that crawls over the web from link to link extracting information
+
+
+
+To run this program,
+
+* PyCharm(IDE)
+  * run the program, should output cleaned up text files within the same directory of each file.
+  * the results should be printed in the terminal
+
