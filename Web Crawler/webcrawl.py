@@ -32,14 +32,19 @@ def web_crawler(starter_url):
     links_arr = []
     counter = 0
     for link in links:
-        link_str = str(link.get('href'))
-        if counter >= 15:
+        link_href = str(link.get('href'))
+        if counter == 15:
             break
-        if '50cent' in link_str or '50 Cent' in link_str:
-            if link_str.startswith('http') and 'google' not in link_str:
-                links_arr.append(link_str)
+        # strictly looking for music, but not enough links
+        if '50 Cent' in link_href or '50cent' in link_href or 'Curtis James Jackson' in link_href or 'Curtis Jackson' in link_href or 'G-Unit' in link_href or 'Get Rich or Die Tryin' in link_href:
+            if link_href.startswith('http') and 'google' not in link_href:
+                links_arr.append(link_href)
                 counter += 1
-    print("links arr: ", links_arr)
+
+    # print("links arr: ", links_arr)
+
+    for link in links_arr:
+        print({link})
     return links_arr
 
 
@@ -61,8 +66,6 @@ def scraper(links_arr):
 # function to clean up the text from each file
 
 def clean_up():
-    stop_words = set(stopwords.words('english'))
-
     text_files = [file for file in os.listdir('.') if os.path.isfile(file) and file.endswith('.txt')]
 
     for file in text_files:
@@ -78,7 +81,7 @@ def clean_up():
 
         # write to file
 
-        new_file = os.path.splitext(file)[0] + 'NEW_CLEANED_UP.txt'
+        new_file = os.path.splitext(file)[0] + '_NEW_CLEANED_UP.txt'
 
         with open(new_file, 'w', encoding='utf-8') as f:
             for sent in sentence_tok:
@@ -88,40 +91,58 @@ def clean_up():
 # function to extract at least 25 important terms from the pages using an
 # importance measure such as term frequency, or tf-idf.
 def extract_top_terms():
-    files = [file for file in os.listdir() if file.endswith('_cleaned_up.txt')]
-    text = ""
+    files = [file for file in os.listdir() if file.endswith('_NEW_CLEANED_UP.txt')]
+
     tf_dict = {}
 
     for file in files:
-        with open(file, 'r') as f:
+        text = ""
+        with open(file, 'r', encoding='utf-8') as f:
             text += f.read()
-    tokens = word_tokenize(text.lower())
-    tokens = [w for w in tokens if w.isalpha()
-              and w not in stopwords.words('english')]
-    # get term frequency
-    for t in tokens:
-        if t in tf_dict:
-            tf_dict[t] += 1
-        else:
-            tf_dict[t] = 1
+            # print("printing read text: " + text)
+        tokens = word_tokenize(text.lower())
+        tokens = [w for w in tokens if w.isalpha()
+                  and w not in stopwords.words('english')]
+        # get term frequency
+        for t in tokens:
+            if t in tf_dict:
+                tf_dict[t] += 1
+            else:
+                tf_dict[t] = 1
 
-    # normalize tf by number of tokens
-    for t in tf_dict.keys():
-        tf_dict[t] = tf_dict[t] / len(tokens)
+        # normalize tf by number of tokens
+        for t in tf_dict.keys():
+            tf_dict[t] = tf_dict[t] / len(tokens)
 
-    # sorts and returns the highest freq term
-    sort_tf = sorted(tf_dict.items(), key=lambda x: x[1], reverse=True)
-    important_terms = [x[0] for x in sort_tf[:25]]
+        # sorts and returns the highest freq term, first 25, could retreive 25 to 40 but this work
+        sort_tf = sorted(tf_dict.items(), key=lambda x: x[1], reverse=True)
+        important_terms = [sort_tf[:24]]
+        print(important_terms)
+        manual_terms = ['50 cent', 'massacre', 'g unit', 'hook', 'club', 'released', 'record', 'stone', 'albums',
+                        'tryin']
+        print("Selected top 10 terms: ", manual_terms)
 
 
+def knowledge_base():
+    kb = {
+        "50 cent": "Curtis James Jackson III (born July 6, 1975), known professionally as 50 Cent, is an American rapper, actor, television producer, and businessman.",
+        "massacre": "The Massacre is the second studio album by American rapper 50 Cent.",
+        "g unit": "G-Unit (short for Guerilla Unit) was an American hip hop group formed by longtime friends and East Coast rappers 50 Cent, Tony Yayo, and Lloyd Banks.",
+        "hook": "A hook is a musical idea, often a short riff, passage, or phrase, that is used in popular music to make a song appealing and to catch the ear of the listener.",
+        "club": "an association or organization dedicated to a particular interest or activity.",
+        "released": "allow or enable to escape from confinement; set free.",
+        "record": "a thing constituting a piece of evidence about the past, especially an account kept in writing or some other permanent form.",
+        "albums": "a collection of recordings issued as a single item on CD, record, or another medium.",
+        "get rich or die tryin": "Get Rich or Die Tryin' is the debut studio album by American rapper 50 Cent. It was released on February 6, 2003, by Interscope Records, Dr. Dre's Aftermath Entertainment, Eminem's Shady Records, and 50 Cent's G-Unit Records"
+    }
 
-    manual_terms = ["50cent", "grodt", "love it", "rap", "hip-hop", "eminem", "dre", "gunit", "g-unit"]
-    print("Terms: ", manual_terms)
-    return manual_terms
-# searchable knowledge base of facts that a chatbot (to be developed later) can
-# share related to the 10 terms. The “knowledge base” can be as simple as a Python dict
-# which you can pickle. More points for something more sophisticated like sql.
-# def knowledge_bade():
+    # save the pickle file
+    pickle.dump(kb, open('knowledge_base.p', 'wb'))  # write binary
+    with open('knowledge_base.p', 'rb') as f:
+        kb_pickle = pickle.load(f)
+
+    for key, val in kb_pickle.items():
+        print("Knowledge Base: ", key + ":" + val)
 
 
 if __name__ == '__main__':
@@ -130,3 +151,9 @@ if __name__ == '__main__':
     scraper(urls)
     clean_up()
     extract_top_terms()
+
+    # searchable knowledge base of facts that a chatbot (to be developed later) can
+    # share related to the 10 terms. The “knowledge base” can be as simple as a Python dict
+    # which you can pickle. More points for something more sophisticated like sql.
+
+    knowledge_base()
