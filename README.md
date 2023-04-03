@@ -95,4 +95,19 @@ To run this program,
 * PyCharm(IDE)
   * run the program, should output cleaned up text files within the same directory of each file.
   * the results should be printed in the terminal
+  
+  
+# Notebook Overview - Text Classification
+
+I used a Twitter Sentiment Analysis dataset where I looked at the sentiment of tweets and classified it based on it being positive,negative, and neutral
+
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/text-classification/Portfolio%20Text%20Classification%201.pdf) and the [notebook is here](https://github.com/alanperez/HLT-Portfolio/blob/main/text-classification/CS4395_001_TEXT_CLASSIFICATION_AXP200075.ipynb)
+
+[PDF](https://github.com/alanperez/HLT-Portfolio/blob/main/text-classification/CS4395_001_TEXT_CLASSIFICATION_AXP200075.pdf)
+
+Objective:
+ - Gain experience with sklearn using Naive Bayes, Logistic Regression, and Neural Networks on text-data
+ - Gain experience with text classification
+
+
 
