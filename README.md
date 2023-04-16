@@ -124,3 +124,17 @@ Summarizing a paper and the contributions made . Will be rewriting the paper at 
 
 
 
+# Program Overview - Chatbot
+
+Project Objective: Create a chatbot using NLP techniques learned in class. The chatbot should
+be able to carry on a limited conversation in a particular domain using a knowledge base or
+knowledge from the web, and knowledge it learns from the user.
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Chatbot/Chatbot.pdf) and the [main part of the program is here](   )
+
+[Report]()
+
+
+
+
+
+
