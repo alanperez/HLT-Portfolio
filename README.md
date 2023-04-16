@@ -108,6 +108,20 @@ The [requirements based off the document](https://github.com/alanperez/HLT-Portf
 Objective:
  - Gain experience with sklearn using Naive Bayes, Logistic Regression, and Neural Networks on text-data
  - Gain experience with text classification
+ 
+ 
+ 
+ 
+ # ACL Summary
+
+I used a Twitter Sentiment Analysis dataset where I looked at the sentiment of tweets and classified it based on it being positive,negative, and neutral
+
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/ACL-Summary/Portfolio%20ACL%20Paper%20Summary.pdf) 
+
+[PDF](https://github.com/alanperez/HLT-Portfolio/blob/main/ACL-Summary/ACL%20Paper%20Summary.pdf)
+
+
+Summarizing a paper and the contributions made. Will be rewriting the paper at a later date.
 
 
 
