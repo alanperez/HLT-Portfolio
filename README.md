@@ -136,5 +136,16 @@ The [requirements based off the document](https://github.com/alanperez/HLT-Portf
 
 
 
+# Notebook Overview - Text Classification 2
 
+I used a Twitter Sentiment Analysis dataset where I looked at the sentiment of tweets and classified it based on it being positive,negative, and neutral
+
+The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Classification2/Portfolio%20Text%20Classification%202.pdf) and the [notebook is here](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Classification2/TextClassification2_AXP2000075.ipynb)
+
+[PDF](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Classification2/TextClassification2_AXP2000075.pdf)
+
+Objectives:
+• Gain experience with Keras
+• Gain experience with text classification
+• Gain experience with deep learning model variations and embeddings
 
