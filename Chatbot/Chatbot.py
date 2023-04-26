@@ -166,7 +166,11 @@ class User:
         try:
             with open('user_models.p', 'rb') as f:
                 user_models = pickle.load(f)
-            return user_models.get(name)
+            user = user_models.get(name)
+            if user:
+                return user.name, user.likes, user.dislikes
+            else:
+                return None
         except FileNotFoundError:
             return None
 
@@ -368,12 +372,17 @@ def moviebot():
 
         # Check if the user already exists
     user = User.load_pickle(name)
-    if not user:
+    if user:
+        name, likes, dislikes = user
+        user = User(name)
+        user.likes = likes
+        user.dislikes = dislikes
+        print(
+            f"Welcome back, {name}! Here are your favorite genres: {', '.join(likes)} and the ones you dislike: {', '.join(dislikes)}")
+    else:
         print(f"Hello, {name}. What genre of movies do you enjoy?")
         user = User(name)
         user.save_pickle()
-    else:
-        print(f"Welcome back, {name}. What other genre of movies do you enjoy?")
 
     while True:
         user_input = input("You: ")
