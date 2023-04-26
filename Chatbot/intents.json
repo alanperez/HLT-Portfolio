@@ -1,0 +1,113 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey",
+        "Yo",
+        "Hola"
+      ],
+      "responses": [
+        "Hello, how can I help you?",
+        "Hi, how can I assist you?",
+        "Hey, what can I do for you?"
+      ],
+      "context_set": ""
+    },{
+        "tag": "goodbye",
+        "patterns": ["Goodbye", "Bye", "See you later"],
+        "responses": ["Goodbye! Have a nice day.", "Bye! See you soon.", "See you later!"],
+        "context_set": ""
+      },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Appreciate it"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem.",
+        "Anytime!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "movie_info",
+      "patterns": [
+        "Tell me about [movie]",
+        "What's [movie] about?",
+        "Give me details on [movie]"
+      ],
+      "responses": [
+        "[movie] is a [genre] movie released in [year]. It has an average rating of [rating] and its plot summary is: [summary]."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "recommend_movie",
+      "patterns": [
+        "Recommend me a movie",
+        "What movie should I watch?",
+        "Can you suggest a movie?",
+        "What's a good movie to watch?"
+      ],
+      "responses": [
+        "I gotchu.. let me find a movie",
+        "Let me find a movie for you"
+      ]
+    },
+    {
+            "tag": "genre",
+            "patterns": [
+                "I like horror movies",
+                "I enjoy action movies",
+                "I love watching thriller films",
+                "comedy movies are the best"
+            ]
+        },
+    {
+      "tag": "genre_info",
+      "patterns": [
+        "What are the popular [genre] movies?",
+        "What's [genre]?",
+        "Give me some [genre] movie recommendations"
+      ],
+      "responses": [
+        "Some popular [genre] movies are [movies]. You might enjoy watching [movie1], [movie2], or [movie3]."
+      ],
+      "context_set": ""
+    },
+    {
+    "tag": "highest_rated",
+    "patterns": [
+      "highest rated movie",
+      "movie with the highest rating",
+      "top rated movie",
+      "which movie has the highest rating"
+    ],
+    "responses": [
+      "The highest rated movie is:"
+    ]
+    },
+    {
+  "tag": "fallback",
+  "patterns": [
+    "I don't understand",
+    "What do you mean?",
+    "Can you say that again?",
+    "I didn't get that"
+  ],
+  "responses": [
+    "I'm sorry, I didn't understand that.",
+    "Could you please rephrase that?",
+    "I'm not sure what you're asking for."
+  ],
+      "context_set": ""
+    }
+
+  ]
+}
