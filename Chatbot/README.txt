@@ -1,6 +1,6 @@
 This chatbot retrieves information regards movies and provides recommondations to the user. I used TMDB API to generate my knowledge base by saving the top 40 popular movies. The goal was to have a dynamic conversation regarding movies it fetches, but I ran into some issues so I hard coded responses and included some rule based intents for the bot to follow. 
 
-In order to run is by using PyCharm and manually running the program. Once ran it should automatically generate the Knowledge_Base
+In order to run is by using PyCharm you must have the chatbot.py, knowledge_base.txt, user pickle, and the intents in the same directory and manually run the program. Once ran it should automatically generate the Knowledge_Base
 but it's probably best just to use the knowledge_base.txt since you would need to have your own API KEY from TMDB and users_models.p. 
 
 An issue you might run into is when it prompts for the name it might not accept it the first time. Theres some issues extracting particular names, but if you input "My name is" it should be able to extract your name. When an existing user is loaded it displays their likes and dislikes and in order for a genre to get added to their likes/dislikes the user must input something similar to " I really love horror movies" and based off the inputs sentiment score it would be added to the users likes. 
