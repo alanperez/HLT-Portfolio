@@ -149,3 +149,9 @@ Objectives:
 • Gain experience with text classification
 • Gain experience with deep learning model variations and embeddings
 
+
+#  Summary - End of Course Reflection
+
+
+
+
