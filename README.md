@@ -6,6 +6,13 @@ Introduction to human language technologies (HLT), the study of natural language
 
 [Portfolio Setup Document](https://github.com/alanperez/HLT-Portfolio/blob/main/Portfolio%20Component%200.pdf)
 
+#  Summary - End of Course Reflection
+
+Overall, I've had a fun time learning about about Natural Language Processing(NLP) and I'm eager to further develop my skills and expaning my knowledge in this field. I was able to gain valuable experience in a range of NLP techniques such as word parsing, term frequency measures, Named Entity Reconognition (NER), information retrieval methods, tokenization, and other amazing concepts. Furthermore, gave us exposure to machine learning and has equipped me with the ability to construct and refine models We also covered machine learning and how to build and refine models. 
+
+
+
+
 # Pogram 1 Overview - Text Processing
 
 The [requirements based off the document](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Processing/Portfolio%20Component%201.pdf) and the [main program is here](https://github.com/alanperez/HLT-Portfolio/blob/main/Text-Processing/homework1-axp200075.py)
@@ -148,10 +155,4 @@ Objectives:
 • Gain experience with Keras
 • Gain experience with text classification
 • Gain experience with deep learning model variations and embeddings
-
-
-#  Summary - End of Course Reflection
-
-Overall, I've had a fun time learning about about Natural Language Processing(NLP) and I'm eager to further develop my skills and expaning my knowledge in this field. I was able to gain valuable experience in a range of NLP techniques such as word parsing, term frequency measures, Named Entity Reconognition (NER), information retrieval methods, tokenization, and other amazing concepts. Furthermore, gave us exposure to machine learning and has equipped me with the ability to construct and refine models We also covered machine learning and how to build and refine models. 
-
 
