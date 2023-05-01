@@ -152,6 +152,6 @@ Objectives:
 
 #  Summary - End of Course Reflection
 
-
+Overall, I've had a fun time learning about about Natural Language Processing(NLP) and I'm eager to further develop my skills and expaning my knowledge in this field. I was able to gain valuable experience in a range of NLP techniques such as word parsing, term frequency measures, Named Entity Reconognition (NER), information retrieval methods, tokenization, and other amazing concepts. Furthermore, gave us exposure to machine learning and has equipped me with the ability to construct and refine models We also covered machine learning and how to build and refine models. 
 
 
